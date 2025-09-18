@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Photography Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #home{
+            background-image: url(data:image/jpeg;base64,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);
+             background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style=" display: flex;">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">My Photography</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Capturing Moments</h1>
+      <p class="lead">Through My Lens</p>
+      <a href="#gallery" class="btn btn-primary btn-lg">View Gallery</a>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="https://source.unsplash.com/400x300/?nature,water" class="img-fluid rounded shadow" alt="Photo 1">
+        </div>
+        <div class="col-md-4">
+          <img src="https://source.unsplash.com/400x300/?city,night" class="img-fluid rounded shadow" alt="Photo 2">
+        </div>
+        <div class="col-md-4">
+          <img src="https://source.unsplash.com/400x300/?portrait,people" class="img-fluid rounded shadow" alt="Photo 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p class="lead mt-3">
+        I am a passionate photographer who loves capturing nature, cityscapes, and portraits. My goal is to tell stories through my photographs and preserve memories that last forever.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <p class="mb-4">Interested in working together? Let's connect!</p>
+      <a href="mailto:yourname@example.com" class="btn btn-success btn-lg">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 My Photography | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

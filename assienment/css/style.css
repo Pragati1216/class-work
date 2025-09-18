@@ -1,0 +1,99 @@
+/* h2{
+    color: #ff0000;
+}
+h3{
+    color: #0000ff;
+}
+h4{
+    color: #00ff00;} */
+
+div{
+    width: 150px;
+    height: 150px;
+}
+/* p{
+    color:rgb(255, 255,255);
+    background-color:rgb(0, 0,0);
+    text-align: center;
+    padding: 50px;
+} */
+*{
+    color: rgb(15, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+#h{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    padding: 30px;
+    text-align: center;
+}
+.box1{
+    width: 200px;
+    height: 100px;
+    transform: skew(50deg);
+    background-color: blueviolet;
+    /* visibility: hidden; */
+}
+
+.box2{
+    width: 150px;
+    height: 0px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 500px solid ;
+    display: inline-block;
+}
+
+.box3{
+    width: 0px;
+    height: 0px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 500px solid ;
+    display: inline;
+}
+
+.box4{
+
+    width: 80px;
+    height: 150px;
+    border-radius: 200px;
+    background-color: aquamarine;
+    /* display: none; */
+
+}
+
+span{
+    background-color: aqua;
+    height: 200px;
+    width: 300px;
+    display: block;
+}
+
+[href]{
+    background-color: bisque;
+}
+
+label::after{
+    content: "*";
+    color: red;
+}
+.se::before{
+    content: "I   am Pragti - ";
+}
+.se::after{
+    content: " Thank you";
+}
+
+.se::first-letter{
+    color: brown;
+    font-size: 50px;
+}   
+
+/* body{
+    background-image: url(bk1.jpg);
+    background-size: contain ;
+} */
+

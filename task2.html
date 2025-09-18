@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Second</title>
+</head>
+<body>
+  
+  <!-- <center>
+    <h2 style="background-color: rgb(228, 160, 172)">Registration From</h2>
+    <form action="index.html" method="get">
+    <table border="2" style="background-color: antiquewhite;" cellpadding="5" cellspacing="10">
+        <tr>
+            <td>First Name :</td>
+               <td> <input type="text" placeholder="enter first name"> </td>
+        </tr>
+         <tr>
+            <td>Last Name :</td>
+               <td> <input type="text" placeholder="enter last name" > </td>
+        </tr>
+        <tr>
+            <td> Age :</td>
+               <td> <input type="text" placeholder="enter Age" step="5"></td>
+        </tr>
+        <tr>
+            <td> Phone Number :</td>
+               <td> <input type="text" name="mobile" pattern="[0-9]{10}" placeholder="Enter number" required ></td>
+        </tr>
+        <tr>
+            <td> Email Id :</td>
+               <td> <input type="email" placeholder="Enter email idr" step="5"></td>
+        </tr>
+        <tr>
+            <td> Password :</td>
+               <td> <input type="password" placeholder="Enter password"></td>
+        </tr>
+        <tr>
+            <td> Gender :</td>
+               <td> <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">male</td>
+
+        </tr>
+        <tr>
+            <td> City :</td>
+               <td> 
+                <select >
+                    <option>select--</option>
+                    <option>Satara</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Kolhapur</option>
+                    <option>Sangali</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td> Hobbies :</td>
+            <td>
+                Dancing <input type="checkbox" name="hobbies" value="dancing">
+               Singing <input type="checkbox" name="hobbies" value="singing">
+               Drawing <input type="checkbox" name="hobbies" value="drawing">
+                Playing <input type="checkbox" name="hobbies" value="playing">
+            </td>
+               
+        </tr>
+        <tr>
+            <td> DOB :</td>
+               <td> <input type="date"></td>
+        </tr>
+        <tr>
+            <td> Upload Resume :</td>
+               <td> <input type="file"></td>
+        </tr>
+        <tr>
+            
+               <td> <input type="submit" value="Registration" style="width: auto;"></td>
+        </tr>
+
+    </table>
+  </form>
+
+  </center> -->
+    
+
+
+
+
+  <h2 style="background-color: rgb(165, 214, 128);" align="center">Registration Form</h2>
+
+    <center>
+
+        <legend>Registration Form</legend>
+        <form action="index.html" method="get">
+            <table border="1" cellpadding="5" cellspacing="10" style="background-color: rgb(189, 172, 185);">
+                <tr>
+                    <td>First Name: </td>
+                    <td><input type="text" Placeholder="Enter First Name" maxlength="10"> </td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input type="text" Placeholder="Enter Last Name" pattern="[a-zA-z]+" title="only char required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age: </td>
+                    <td><input type="number" Placeholder="Enter age" min="1" max="100" step=5s> </td>
+                </tr>
+                <tr>
+                    <td>Contact No: </td>
+                    <td><input type="number" min="10" step="5"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" placeholder="Enter mail id"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td>
+                        <input type="password" placeholder="Enter password" min="8" required autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td>Male <input type="radio" name="gender" value="male">
+                        Female <input type="radio" name="gender" value="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City: </td>
+                    <td>
+                        <select>
+                            <option>Pune</option>
+                            <option>Mumbai</option>
+                            <option>Nashik</option>
+                            <option>Jalgaon</option>
+                            <option>banglore</option>
+                            <option>Indore</option>
+                            <option>Ujjain</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies: </td>
+                    <td>
+
+                        Dancing <input type="checkbox" name="hobbies" value="dancing">
+                        Reading <input type="checkbox" name="hobbies" value="Reading">
+                        Singing <input type="checkbox" name="hobbies" value="Singing">
+                        Playing <input type="checkbox" name="hobbies" value="playing">
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB: </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+
+                    <td><input type="text" name="Notes" value="Readonly" readonly></td>
+                    <td>Resume: <input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" width="50">
+                        <input type="submit" value="Registration" style="width: 500px;">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" value="Button" disabled></td>
+                </tr>
+            </table>
+        </form>
+
+    </center>
+</body>
+</html>

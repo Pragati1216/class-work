@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+}
+nav{
+    background-color: gray;
+    text-align: right;
+    padding: 10px;
+    margin: 0px;
+}
+nav a{
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(245, 243, 243);
+}
+h3{
+    background-color: gray;
+    color: aliceblue;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   margin-left: 600px;
+}
+
+div{
+    text-align: center;
+    background-image: url(bk1.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    height: 700px;
+}
+div h2{
+    font-size: 50px;
+    margin-top: 80px;
+}
+div p{
+    font-size: 30px;
+    margin-top: 30px;
+}

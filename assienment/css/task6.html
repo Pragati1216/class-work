@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+         margin-left: 50px;
+         background: repeating-linear-gradient(white,pink);
+      }
+         .div{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            margin: auto;
+            margin-top: 50px; 
+            box-shadow: 15px 20px 5px rgb(110, 162, 167); 
+            outline: 2px solid black;
+            border-radius: 30px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YldG9_T5wRFKCH-VAz9DEtp61CU11Yzg8A&s);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        } 
+         h2{
+            text-align: center;
+            background-color: antiquewhite;
+            width: 200px;
+            margin-left: 520px;
+            padding: 20px;
+            text-shadow: 10px 10px 3px gray;
+         }
+
+         .box{
+            background-color: aqua;
+            width: 100px;
+            height: 200px;
+            
+         }
+         .box:hover{
+            transform: translate(100px);
+         }
+
+         .square{
+             background-color: rgb(52, 150, 150);
+            width: 300px;
+            height: 300px;
+         }
+         .square:hover{
+            transition: transfrom 3s;
+            transform: rotate(45deg);
+         }
+         .scale{
+            background-color: rgb(74, 238, 104);
+            width: 200px;
+            height: 200px;
+         }
+         .scale:hover{
+             transform: scale(1.5);
+
+         }
+
+         .skew{
+            width: 300px;
+            height: 200px;
+            background-color: rgb(204, 132, 39);
+           
+         }
+         .skew:hover{
+             transform: skew(20deg);
+
+         }
+         .droted{
+            background-color: rgb(74, 238, 104);
+            width: 200px;
+            height: 200px;
+         }
+         .droted:hover{
+            transform: rotateY(60deg); 
+         }
+
+         .but{
+            background: linear-gradient(blue, green);
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+            color: aliceblue;
+         }
+         .but:hover{
+            transform: scale(1.5, 1.5);
+         }
+
+         header{
+            background: conic-gradient( red, yellow);
+            padding: 40px;
+            font-size: 20px;
+         }
+         .rainbow{
+            width: 900px;
+            height: 200px;
+            background: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+            
+         }
+         .digonal{
+            width: 500px;
+            height: 500px;
+            background:repeating-linear-gradient(45deg,rgb(240, 34, 68),rgb(235, 148, 16),rgb(235, 224, 72));
+            }
+
+            .spiner{
+               width: 100px;
+               height: 100px;
+               border: 6px solid black;
+               border-top: solid red;
+               animation: spin 1s linear infinite;
+            }
+
+            @keyframes spin{
+               from{transform: rotate(0deg);}
+               to{transform: rotate(360deg);}
+            }
+
+            .elipserg{
+               width: 500px;
+               height: 500px;
+               background: radial-gradient(red ,yellow,green);
+            }
+           .radial{
+                width: 500px;
+               height: 500px;
+               background: radial-gradient(red,orange,yellow,green,blue,indigo,violet);
+           }
+           .ani{
+             width: 500px;
+               height: 500px;
+               animation: anibox 2s linear infinite;
+           }
+
+           @keyframes anibox{
+             from{background-color: red;}
+               to{background-color: rgb(65, 172, 218);}
+           }
+
+           .move{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            animation: movement 2s alternate infinite;
+           }
+           @keyframes movement{
+            0%{transform: translate(1000px);}
+           }
+
+           .bouns{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: yellow;
+            animation: boll 1s linear infinite;
+           }
+
+           @keyframes boll{
+            0% { transform: translateY(0); }
+              50%  { transform: translateY(-70px); }
+              100% { transform: translateY(0); }
+
+            }
+           
+
+        .twoinone{
+         width: 300px;
+         height: 300px;
+         background-color: blue;
+         animation: two 2s alternate infinite;
+        }
+        @keyframes two{
+          0%{transform: translate(1000px);}
+          20%{background-color: aquamarine;}
+          50%{transform: rotate(30deg);}
+          80%{transform: translate3d(20deg);}
+          90%{transform: translateY(-50px);}
+        }
+    </style>
+</head>
+<body> 
+    <h2> Bird Image</h2>
+    
+     <div class="div">
+
+     </div>
+
+     <div class="box"></div><br><br>
+
+     <div class="square">square roted 45 deg</div><br><br><br>
+
+     <div class="scale">scale</div><br><br><br>
+
+     <div class="skew">skew rectangle</div><br><br><br>
+
+     <div class="droted">3D rotedY</div><br><br><br><hr><br><br>
+
+     <input class="but" type="submit"  value="submit"><br><br>
+
+     <header>welcome to my page</header><br><br>
+
+     <div class="rainbow"> rainbow</div><br><br>
+
+     <div class="digonal"> diagonal strip</div><br><br><hr><br><br>
+
+      <div class="spiner"> spiner</div>
+
+      <div class="elipserg"> ellipse radial gradient </div><br><br>
+
+      <div class="radial">  radial gradient </div><br><br><hr><br><br>
+
+      <div class="ani"></div><br><br><br>
+
+      <div class="move"></div><br><br><br><br><br><br>
+
+      <div class="bouns"></div><br><br><br><br><br><br>
+
+      <div class="twoinone"></div><br><br><br>
+
+
+
+
+
+
+</body>
+</html>
