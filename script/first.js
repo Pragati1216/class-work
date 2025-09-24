@@ -129,27 +129,115 @@
    
 // }
 
-for(let i=10;i>=1;i--){
-   console.log(i);
-   
+
+
+//Function --> function is block of code to perform a specific task.
+//it runs when it is called/invoked.
+//uses : 1)resusability 2) Avoid repetition of code 3)break complex code into smaller parts 4) easy to test and debug
+//syntax --> function function_name(){}
+
+//function declaration
+function greet() {
+    console.log("hello, Good Morning");
+}
+greet();
+greet();//function calling
+
+
+function add() {
+    console.log("hello perfom add function"); 
+}
+function add(){
+    let num1=20;
+    let num2=30;
+    console.log(`addition is ${num1+=num2}`);
 }
 
-//2. while loop
+//add(); is overriden, always latest function will be cinsiedered
+add();
 
-let num = 1;
-while (num<=10) {
-   console.log("hello");
-   num++;
+
+
+// function with parameters 
+
+function hello(username) {
+    console.log(`hello... ${username}`);
+}
+hello("Pragati");
+
+
+//evenOdd Example using function
+function evenOddCheck(number) {
+  if (number%2==0) {
+    console.log(`${number} is Even`);
+  }
+
+  else{
+    console.log(`${number} is Odd`);
+  }
 }
 
-// 3. Do while loop
+evenOddCheck(45);
+evenOddCheck(88);
 
-let val = 10;
 
-do{
-   console.log("i am Pragati");
-   val--;
+//return type with no parameter
+function str() {
+    return "hello I an Pragati";
 }
-while (val>=1) {
-   console.log("i am Pragati");
+let s=str();
+console.log(s);
+
+
+//return type with parameter
+function addition(n1, n2){
+    return n1+n2;
 }
+
+let sum = addition(20,50);
+console.log(sum);
+
+
+// parameter with default value
+
+function defualtValue(name ="pragati") {
+    console.log(`My name is ${name}`);
+}
+defualtValue("Aniket ");
+
+
+//Rest Parameter
+
+function numbers(...num) {
+    console.log(num);
+    
+}
+numbers(12,3,4,57,5,3,9);
+
+
+
+//function in function
+
+// function outer(){
+
+//     function inner() {
+//         console.log("i am inner function");
+        
+//     }
+//     inner();
+//     console.log(" i am outer function");
+// }
+// outer();
+
+
+// with parameter
+function outer(age){
+
+    function inner(name) {
+        console.log("i am inner function with prameter" +name);
+        
+    }
+    inner("Pragati");
+    console.log("my  age is "+age);
+}
+outer(22);

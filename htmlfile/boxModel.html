@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h2{
+            text-align: center;
+            color: darkblue;
+            font-style: italic;
+        }
+        #mybox{
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+            margin: auto;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        button{
+            background-color: darkgray;
+            padding: 10px;
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>BOx Model using Javascript</h2>
+    <div id="mybox">Dynamic Box</div>
+    <button onclick="bgcolor()">bgColor</button>
+    <button onclick="border()">Border</button>
+    <button onclick="images()">Images</button>
+
+    <script>
+        function bgcolor(){
+            const box=document.getElementById("mybox");
+            box.style.backgroundColor="pink"
+        }
+        function border(){
+            const box=document.getElementById("mybox");
+            box.style.border= "2px solid black";
+            box.style.bordershadow="30px 30px 5px red";
+        }
+    </script>
+    
+
+    <script src="/script/boxModel.js"></script>
+</body>
+</html>
